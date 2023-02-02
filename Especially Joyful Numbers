@@ -1,0 +1,11 @@
+function number_joy(int $n): bool {
+  $arr = str_split($n);
+  $sum = 0;
+  for ($i = 0; $i < count($arr); $i++) 
+  {
+   $sum += $arr[$i];
+  } 
+  $sumReverse = strrev($sum);
+  return 
+    $sum * $sumReverse == $n ? true : false;
+}
